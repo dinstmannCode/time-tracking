@@ -1,11 +1,11 @@
 <template>
-  <div id="app">    
+  <div id="app">
     <router-view />
   </div>
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
 
 :root {
   --bg-body: hsl(226, 43%, 10%);
@@ -23,21 +23,32 @@
   --txt-soft-blue: hsl(236, 100%, 87%);
 
   --card-border-radius: 10px;
-
 }
 body {
   background: var(--bg-body);
+  max-width: 1440px;
 }
 
-h1, h2, h3, p, label, span {
-  font-family: 'Rubik', sans-serif;
+h1,
+h2,
+h3,
+p,
+label,
+span {
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 300;
   color: var(--txt-white);
-  letter-spacing: .5px;
-
+  letter-spacing: 0.5px;
 }
 p {
   margin: 1rem 0 0;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
